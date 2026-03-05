@@ -5,14 +5,14 @@ Practice of UML diagrams
 
 ## Diagramme de cas d'utilisation
 
-![use-cases-diagram](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/Zatigan/OmniLib-UML-/diagramme_userCases.iuml)
+![use-cases-diagram](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/Zatigan/OmniLib-UML-/main/diagramme_userCases.iuml)
 
 ## Diagramme de classe
 ```mermaid
 
 classDiagram
 	
-	class Bibliotheque{
+	class Bibliotheque {
 		<<abstract>>
 		#List~Document~ listDocument
 		#List~Adherent~ listAdherent
@@ -22,7 +22,7 @@ classDiagram
 		+appelTransporteur(API)
 	}
 	
-	class Visiteur{
+	class Visiteur {
 		+chercherDocument()
 		+accederDocumentNumerique(false)
 		+accederDocumentPhysique(false)
@@ -40,7 +40,7 @@ classDiagram
 		+accederDocumentPhysique(true)
 	}
 	
-	class Premium{
+	class Premium {
 		+boolean abonnementPaye
 		
 		+accederDocumentNumerique(true)
@@ -48,7 +48,7 @@ classDiagram
 		+louerVod()
 	}
 	
-	class Bibliothecaire{ 
+	class Bibliothecaire { 
 		+mettreAJourCatalogue()
 		+validerRetourLivre()
 	}
@@ -59,7 +59,7 @@ classDiagram
 	Bibliotheque o-- Visiteur
 	Bibliotheque o-- Document	
 	
-	class Document{
+	class Document {
 		<<abstract>>
 		-String titre
 		-String auteur
