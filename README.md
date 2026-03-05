@@ -5,7 +5,9 @@ Practice of UML diagrams
 
 ## Diagramme de cas d'utilisation
 
-![use-cases-diagram](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/Zatigan/OmniLib-UML-/main/.assets/diagramme_userCases.iuml)
+<!--
+ ![use-cases-diagram](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/Zatigan/OmniLib-UML-/main/.assets/diagramme_userCases.iuml) 
+ -->
 
 ## Diagramme de classe
 ```mermaid
@@ -109,6 +111,5 @@ classDiagram
 ```
 
 ## Diagramme d'activité
-<!-- 
+
 ![activity-diagram](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/Zatigan/OmniLib-UML-/main/.assets/diagramme_activite.iuml) 
--->
