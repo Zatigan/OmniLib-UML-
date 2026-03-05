@@ -1,4 +1,3 @@
-@startuml
 title Réservation en ligne d'un livre physique
 start 
 :Se connecter;
@@ -13,4 +12,3 @@ else (non)
 :Récupérer le livre;
 endif
 stop
-@enduml
