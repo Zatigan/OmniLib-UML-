@@ -1,0 +1,16 @@
+@startuml
+title Réservation en ligne d'un livre physique
+start 
+:Se connecter;
+:Réserver un livre;
+if (Pénalités ?) then (oui)
+stop
+else (non)
+if (Livraison à domicile ?) then (oui)
+:Saisir adresse;
+:Payer 5€;
+else (non)
+:Récupérer le livre;
+endif
+stop
+@enduml

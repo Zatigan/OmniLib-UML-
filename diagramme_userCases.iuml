@@ -1,0 +1,52 @@
+@startuml
+skinparam actorStyle awesome
+left to right direction
+
+together {
+actor "Visiteur" as visiteur
+actor "Adherent standard" as adherent
+actor "Adhérent premium" as premium
+actor "Bibliothécaire" as bibi
+}
+
+
+visiteur <|- adherent
+adherent <|- premium
+bibi -|> visiteur
+
+rectangle "Portail OmniLib"{
+	usecase "Chercher un document" as UC_chercher
+	usecase "Se connecter" as UC_connecter
+	
+	visiteur -- UC_chercher
+	UC_chercher -.-> UC_connecter :extends
+	
+	usecase "Emprunter" as UC_emprunter
+	usecase "Réserver" as UC_reserver
+	usecase "Livrer" as UC_livrer
+	
+	
+	adherent -- UC_emprunter
+	adherent -- UC_reserver
+	UC_reserver <-.- UC_livrer :include
+	
+	usecase "Télécharger un Ebook" as UC_Ebook
+	usecase "Louer une VOD" as UC_VOD
+	
+	premium  -- UC_Ebook
+	premium  -- UC_VOD	
+	
+	usecase "Mettre à jour le catalogue" as UC_MAJCata
+	usecase "Valider les retours" as UC_retour
+	
+	bibi -- UC_MAJCata
+	bibi -- UC_retour
+		
+}
+
+together {
+	actor "API Transporteur" as transporteur
+	}
+	
+	UC_livrer -- transporteur
+@enduml
