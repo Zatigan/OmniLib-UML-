@@ -109,5 +109,6 @@ classDiagram
 ```
 
 ## Diagramme d'activité
-
-![activity-diagram](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/Zatigan/OmniLib-UML-/main/.assets/diagramme_activite.iuml)
+<!-- 
+![activity-diagram](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/Zatigan/OmniLib-UML-/main/.assets/diagramme_activite.iuml) 
+-->
